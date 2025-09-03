@@ -2,26 +2,26 @@
 
 Please find the answers based on each folder for each task with following structure:
 <pre>
-  Task 1
+Task 1
  ┣ Code_Task 1.sql
  ┣ Presentation_Task 1.pdf
  ┣ Presentation_Task 1.ppt
  ┣ README.md
  ┗ Data Analysis_Task 1.xlsx
-  Task 2
+Task 2
  ┣ app
  ┃ ┗ app.py
  ┣ docker-compose.yml
  ┣ Dockerfile
  ┣ README.md
  ┗ requirements.txt
-  Task 3
+Task 3
  ┣ Ghifary Abrar Rabbani_Task 3.pdf
  ┣ Framework_Task 3.pdf
-  Task 4
+Task 4
  ┣ Ghifary Abrar Rabbani_Task 4.pdf
  ┣ Framework_Task 4.pdf  
-  Task 5
+Task 5
  ┣ Ghifary Abrar Rabbani_Task 5.pdf
 </pre>
 
