@@ -84,7 +84,7 @@ group by date_trunc('year', Date_received)
 order by year;
 ```
 
-- Total Complaints based on Type of Submission
+- Total Complaints Based on Type of Submission
 ```sql 
 select count(*) from crmevents
 where submitted_via = 'Phone';
@@ -99,13 +99,13 @@ order by total_calls desc;
 -- This analysis was also done manually by counting the total complaints submitted via phone from CRMEvents and comparing it with the total valid complaints in CRMCallCenterLogs (total minus null complaint IDs). The numbers matched, confirming data consistency.
 ```
 
-- Average of Serving Time
+- Average Serving Time
 ```sql 
 select AVG(ser_time) as Average_Time from crmcallcenterlogs cc
 join crmevents ce on cc.complaint_id = ce.complaint_id
 where cc.ser_time is not null;
 ```
-- Product as the segment of analysis average of serving time
+- Product as The Segment of Analysis Average Serving Time
 ```sql
 select date_trunc('year', cc.date_received) as year_complaint, 
 cast(extract(epoch from avg(ser_time))as int) as Average_Time
@@ -124,7 +124,7 @@ group by date_trunc('year', cc.date_received)
 order by year_complaint;
 ```
 
-- Total complaints based on Product
+- Total Complaints Based on Product
 ```sql
 select ce.product, count(*)
 from crmevents ce
@@ -143,7 +143,7 @@ group by date_trunc('year', cc.date_received), ce.sub_product
 order by year_complaint;
 ```
 
-- Total complaints based on Sub Product
+- Total Complaints Based on Sub Product
 ```sql
 select ce.sub_product, count(*)
 from crmevents ce
@@ -151,7 +151,7 @@ join crmcallcenterlogs cc on ce.complaint_id = cc.complaint_id
 group by sub_product;
 ```
 
-- Total Complaints based on Timely Response-Consumer Disputed Over The Years
+- Average Serving Time based on Timely Response-Consumer Disputed Over The Years
 ```sql
 select date_trunc('year', cc.date_received) as year_complaint, ce.timely_response, ce.consumer_disputed,
 cast(extract(epoch from avg(ser_time))as int) as Average_Time
@@ -162,7 +162,7 @@ group by date_trunc('year', cc.date_received), ce.timely_response, ce.consumer_d
 order by year_complaint;
 ```
 
-- Total Complaints based on Timely Response
+- Total Complaints Based on Timely Response
 ``` sql
 select ce.timely_response, count(*)
 from crmevents ce
@@ -170,7 +170,7 @@ join crmcallcenterlogs cc on ce.complaint_id = cc.complaint_id
 group by ce.timely_response;
 ```
 
-- Total Complaints based on Consumer Disputed
+- Total Complaints Based on Consumer Disputed
 ```sql
 select ce.consumer_disputed, count(*)
 from crmevents ce
