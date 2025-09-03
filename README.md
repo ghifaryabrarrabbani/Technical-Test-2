@@ -7,7 +7,7 @@ Please find the answers based on each folder for each task with following struct
  ┣ Presentation_Task 1.pdf
  ┣ Presentation_Task 1.ppt
  ┣ README.md
- ┗ Data_Presentation.xlsx
+ ┗ Data Analysis_Task 1.xlsx
   Task 2
  ┣ app
  ┃ ┗ app.py
@@ -17,10 +17,10 @@ Please find the answers based on each folder for each task with following struct
  ┗ requirements.txt
   Task 3
  ┣ Ghifary Abrar Rabbani_Task 3.pdf
- ┣ Framework_Task 3.
+ ┣ Framework_Task 3.pdf
   Task 4
  ┣ Ghifary Abrar Rabbani_Task 4.pdf
- ┣ Framework_Task 4.  
+ ┣ Framework_Task 4.pdf  
   Task 5
  ┣ Ghifary Abrar Rabbani_Task 4.pdf
 </pre>
