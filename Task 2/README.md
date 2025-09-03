@@ -42,7 +42,6 @@ data = pd.read_csv(link, sep=',')
 app = dash.Dash(__name__)
 app.layout = html.Div([  
     html.H1("Luxury Loan Portfolio Dashboard"),
-    html.P("This dashboard shows insights on loan balances, payments, and interest rates."),
 
     dcc.Tabs(id="tabs-example", 
             value='tab-1', 
