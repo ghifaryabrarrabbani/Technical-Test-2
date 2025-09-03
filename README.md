@@ -26,6 +26,9 @@ Please find the answers based on each folder for each task with following struct
 </pre>
 
 If there is anything need to be discuss, please dont hesitate to ask me.
+
 Email: [ghifaryabrarrr@gmail.com]
+
 Linkedin: [https://www.linkedin.com/in/ghifaryabrarrabbani/]
+
 Github: [https://github.com/ghifaryabrarrabbani]
